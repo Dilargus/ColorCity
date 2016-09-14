@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+
+    >
+
+
+    <Button
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="@drawable/button_shape"
+        android:shadowColor="#3E3EA8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:padding="5dip"
+        android:text="Logout"
+        android:id="@+id/gps_ok_btn"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:onClick="logOut" />
+    <Button
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="@drawable/button_shape"
+        android:shadowColor="#3E3EA8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:padding="5dip"
+        android:text="Exit"
+        android:id="@+id/gps_exit_btn"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:onClick="exitApp" />
+</FrameLayout>

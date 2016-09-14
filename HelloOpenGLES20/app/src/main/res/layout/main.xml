@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2011 The Android Open Source Project.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+
+</LinearLayout>
+-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/background">
+    <com.example.android.opengl.OpenGL.MyGLSurfaceView
+        android:id="@+id/renderSurface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.example.android.opengl.OpenGL.MyGLSurfaceView>
+
+   <!-- <ImageView android:layout_width="35dp"
+        android:id="@+id/accuracy"
+        android:layout_height="35dp"
+        android:src="@drawable/circle"
+        android:padding="5dip"
+        android:layout_margin="5dip"
+        android:layout_gravity="left|top"
+        />
+
+    <TextView android:layout_width="35dp"
+        android:id="@+id/text_accuracy"
+        android:layout_height="35dp"
+        android:padding="0dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="14dip"
+        android:layout_gravity="left|top"
+        android:textColor="#000000"
+        android:text="00"
+
+        />
+-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:scrollbars="horizontal"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="@drawable/quadrat_shape"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_rotate_left"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:shadowColor="#3E3EA8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_margin="5dip"
+        android:layout_gravity="left|top"
+        android:clickable="true"
+        android:src="@drawable/rotate_left"
+        android:scaleType="fitCenter"
+        android:background="@drawable/quadrat_shape"/>
+
+    <ImageButton
+        android:id="@+id/btn_rotate_right"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:shadowColor="#3E3EA8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_margin="5dip"
+        android:layout_gravity="right|top"
+        android:clickable="true"
+        android:src="@drawable/rotate_right"
+        android:scaleType="fitCenter"
+        android:background="@drawable/quadrat_shape"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/inventory_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/inventory_shape"
+        android:layout_marginBottom="55dip"
+        android:layout_marginTop="25dip"
+
+        />
+
+    <TextView
+        android:id="@+id/inventory_title"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textSize="20sp"
+        android:text="Inventory"
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/black_shape"
+        />
+    <TextView
+        android:id="@+id/inventory_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/black_shape"
+        />
+    <Button
+        android:id="@+id/btn_menu"
+        android:text="Menu"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="@drawable/button_shape"
+        android:shadowColor="#3E3EA8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:padding="5dip"
+        android:layout_margin="5dip"
+        android:layout_gravity="right|bottom"
+        android:onClick="showMenu"
+        android:clickable="true" />
+
+    <ImageButton
+        android:id="@+id/btn_inventory"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:shadowColor="#3E3EA8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:padding="8dip"
+        android:layout_margin="5dip"
+        android:layout_gravity="left|bottom"
+        android:clickable="true"
+        android:src="@drawable/inventory_btn"
+        android:scaleType="fitCenter"
+        android:background="@drawable/inventory_btn_shape"
+        android:gravity="center"
+        android:onClick="showInventory"
+        />
+</FrameLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    Copyright (C) 2011 The Android Open Source Project.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources>
+
+    <string name="hello">Hello, OpenGL ES 2.0!</string>
+    <string name="app_name">Hello OpenGL ES 2.0</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Player Name</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_link_to_register">Not registered yet? Sign up now.</string>
+    <string name="btn_link_to_login">Already registered? Back to Login.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Player Name</string>
+
+</resources>

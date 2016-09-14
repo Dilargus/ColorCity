@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.3'
+
+    defaultConfig {
+        applicationId "com.example.android.opengl"
+        minSdkVersion 21
+        targetSdkVersion 21
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    configurations {
+        all*.exclude group: 'com.google.firebase', module: 'firebase-common'
+    }
+
+}
+dependencies {
+    compile 'com.github.yukuku:ambilwarna:2.0.1'
+    compile 'com.google.android.gms:play-services-location:9.4.0'
+    compile 'com.google.android.gms:play-services-maps:9.4.0'
+    compile 'com.google.android.gms:play-services-gcm:9.4.0'
+    compile 'com.mcxiaoke.volley:library-aar:1.0.0'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'com.android.support:cardview-v7:23.1.1'
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_layout_root"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your GPS is disabled. Enable it and click on the BACK Button."
+        android:id="@+id/textView"
+        android:layout_gravity="top|center_horizontal" />
+
+    <Button
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="@drawable/button_shape"
+        android:shadowColor="#3E3EA8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:padding="5dip"
+        android:text="Ok"
+        android:id="@+id/gps_ok_btn"
+        android:layout_gravity="left|bottom"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:onClick="gotoGPSSettings" />
+    <Button
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="@drawable/button_shape"
+        android:shadowColor="#3E3EA8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:padding="5dip"
+        android:text="Exit"
+        android:id="@+id/gps_exit_btn"
+        android:layout_gravity="right|bottom"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:onClick="exitApp" />
+</FrameLayout>
